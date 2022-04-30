@@ -1,0 +1,30 @@
+pm.test("Status code is 201" , function(){
+
+    pm.response.to.have.status(201);
+
+});
+
+ 
+var em = pm.variables.get("email");
+
+var pwd = pm.variables.get("password");
+
+ 
+
+pm.test("Check email " +em, function () {
+
+    var jsonData = pm.response.json();
+
+    pm.expect(jsonData.email).to.eql(em);
+
+});
+
+ 
+
+pm.test("Check password " +pwd, function () {
+
+    var jsonData = pm.response.json();
+
+    pm.expect(jsonData.password).to.eql(pwd);
+
+});

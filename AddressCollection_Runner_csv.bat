@@ -1,0 +1,1 @@
+newman run Data_Driven.postman_collection.json -d "D:\Postman_API_Testing\POST_Register.csv" -n 3

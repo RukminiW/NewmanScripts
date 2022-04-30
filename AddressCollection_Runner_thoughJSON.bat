@@ -1,0 +1,1 @@
+newman run Address_Token_At_Collection_Level.postman_collection -r htmlextra
